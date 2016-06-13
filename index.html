@@ -17,13 +17,16 @@
   <div class="navbar-fixed">
     <nav class="blue lighten-1">
       <div class="nav-wrapper">
-        <p class="brand-logo center">Hackspace: Reto 4 - Modal</a>
+        <p class="brand-logo center">Hackspace: Reto 4 - Modal</p>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete</a></li>
       </ul>
       </div>
     </nav>
-  
+   <ul class="side-nav" id="mobile-demo">
+        <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete</a></li></li>
+      </ul>
 
   </div>
          <div class="row">
@@ -216,6 +219,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
+    $(".button-collapse").sideNav();
     $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();

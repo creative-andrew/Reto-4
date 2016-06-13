@@ -14,3 +14,14 @@ p {
 h1 {
     font-size: 2em;
 }
+
+
+
+@media only screen and (max-width: 780px) {
+	.brand-logo {
+		font-size: 1.3em !important;
+	}
+
+	
+
+}
